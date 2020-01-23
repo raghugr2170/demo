@@ -1,0 +1,167 @@
+@CHARSET "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-family: sans-serif;
+	font-size: 32px;
+	text-align: left;
+}
+.price-table
+{
+	padding: 60px 0;
+}
+.single-price
+{
+	margin: 10px;auto;
+	display: inline;
+	float: left;
+	width: 100%;
+	background-color: #efefef;
+	transition: 0.5s;
+}
+.single-price:hover
+{
+	box-shadow: 0 2px 20px #ccc;
+}
+.price-head
+{
+	background-color: #2196f3;
+	display: line;
+	float: left;
+	padding: 10px; 5px;
+	text-align: center;
+	width: 100%;
+}
+.price-head h2
+{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding: 5px;
+	text-transform: uppercase;
+}
+.price-head p
+{
+	color: #ccc;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 25px;
+}
+.span
+{
+	font-size: 15px;
+}
+.price-content
+{
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 0 15px;
+}
+ul li
+{
+	border-bottom: 1px solid #fff;
+	padding: 5px 5px;
+	list-style: none;
+}
+ul li:last-child
+{
+	border: none;
+}
+.fa
+{
+  padding: 0 10px;
+  color: red;
+  font-size: 20px; 	
+} 
+.fa-check-circle
+{
+	color: green;
+}
+.price-button
+{
+	display: inline;
+	float: left;
+	padding: 15px 15 px 30px;
+	text-align: center;
+	width: 100%;
+}
+.buy-button
+{
+	background-color: #2196f3;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 17px;
+	padding: 15px 50px;
+	transition: all 0.5s;
+}
+ .buy-button :hover 
+{
+	border-color: 1px soild #fff;
+	background-color: #3f51b5;
+} 
+a
+{
+text-decoration: none !important;
+ /* color: #fff !important; */	
+}
+.toggle-thing
+{
+	
+	input[type=checkbox]
+	{
+	 height: 0;
+	 width: 0;
+	 visibility: hidden;
+	}
+	
+	label
+	{
+	  background: red;
+	  text-indent:-9999px;
+	  width: 200px;
+	  height: 100px;
+	  background: grey;
+	  display: block;
+	  border-radius: 100px;
+	  position: relative;
+	}
+	
+	label:after
+	{ 
+	  content: '';
+	  position: absolute;
+	  top: 5px;
+	  left: 5px;
+	  height: 90px;
+	  width: 90px;
+	  background: #fff;
+	  border-radius: 90px;
+	  transistion: 0.3s;
+	}
+	input:checked + label
+	{
+	  background: #bada55;
+	}
+	
+	input:checked + label:after
+	{
+	  left: calc(100% - 5px);
+	  transform: translateX(-100%);
+	  
+	}
+	
+	label:active:after
+	{
+	  width: 130px;
+	}
+	
+	body
+	{
+	  display:flex;
+	}		
+}
